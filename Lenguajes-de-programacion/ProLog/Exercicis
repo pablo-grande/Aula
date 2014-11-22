@@ -1,0 +1,29 @@
+element(1,[X|_],X).
+element(N,[_|L],Y), N1 is N-1, element(N1,L,Y).
+
+invertir([a,e,[b,c,d],i,o,u],L).
+L=[u,o,i,[d,c,b],e,a].
+
+invertir([],[]).
+invertir([X|L1],L3):-not(llista(X)),invertir(L1,L2),append(L2,[X],L3). /si l'element no es una llista
+invertir([X|L1[,L3):-llista(X),invertir(X,L4),invertir(L1,L2),append(L2,[L4],L3). /si es una llista
+
+
+retornaNprimers(3,[a,b,c,d,e],L).
+L=[a,b,c].
+
+retornaNprimers(0,_,[]).
+retornaNprimers(1,[X|_],[X]).
+retornaNprimers(N,[X|L1],[X|L2]):-N1 is N-1,retornaNprimers(N1,L1,L2).
+
+extreuNprimers(3,[a,b,c,d,e],L).
+L=[d,e]
+
+extreuNprimers(0,L,L).
+extreuNprimers(N,[_|L1],L2):-N1 is N-1,extreuNprimers(N1,L1,L2)
+
+retornaNdarrers(3,[a,b,c,d,e],L)
+L=[c,d,e]
+
+retornaNdarrers(0,_,[])
+reotnraNdarrers(N,L1,L2),length(L1,A),N1 is A-N, retornaNdarrers(N1,L1,L2)

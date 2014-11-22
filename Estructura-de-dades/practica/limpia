@@ -1,0 +1,2 @@
+rm -f *.ali *.o *.swp *~
+rm *.co *.de
