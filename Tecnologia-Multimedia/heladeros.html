@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="es">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Heladería</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/main.css">
+      <!-- <link rel="stylesheet" href="css/chat.css" /> -->
+
+      <!-- jQuery library -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+      <!-- scripts -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/maps.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/heladeros.js"></script>
+
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+      <!-- Maps -->
+      <script src="http://maps.googleapis.com/maps/api/js"></script>
+    </head>
+    <body>
+
+    <section>
+    <div class="container">
+        <div class="row">
+          <article>
+            <div class="panel panel-default centered svg">
+              <header><h3><div class="panel-body">Selecciona una tienda para traer tu helado</div></h3></header>
+            </div>
+          </article>
+
+          <!-- FORMATO -->
+
+          <article>
+            <div class="col-md-12">
+              <header><h2>Tiendas & Heladeros</h2>
+            </div>
+          </article>
+
+          <section>
+            <article>
+              <div class="col-md-12 col-xs-12">
+              <table id="heladeros" class="table table-hover">
+                <tr>
+                  <th>Nombre</th>
+                  <th>Descripción</th>
+                  <th>Heladería</th>
+                </tr>
+              </table>
+            </div>
+            </article>
+          </section>
+
+        </div>
+
+    <hr>
+    <section class="hidden" id="seller-section">
+      <div class="row">
+        <article>
+          <div class="col-md-3 col-xs-12">
+            <header><h2 class="centered" id="seller-name"></h2></header>
+            <img id="seller-jpg" style="width:250px;height:180px;"/>
+	        <h4 class="centered" id="seller-store"></h4>
+          </div>
+            <div class="col-md-9 col-xs-12">
+                <div class="col-md-12 col-xs-12">
+                    <header><h3 class="centered">Últimas valoraciones</h3></header>
+                    <div id="Excelente" class="alert alert-success hidden centered" role="alert"></div>
+                    <div id="Bien" class="alert alert-info hidden centered" role="alert"></div>
+                    <div id="Mejorable" class="alert alert-warning hidden centered" role="alert"></div>
+                    <div id="Horrible" class="alert alert-danger hidden centered" role="alert"></div>
+                </div>
+            </div>
+        </article>
+      </div>
+        <div cass="row">
+            <article>
+                <div id="googleMap" style="height:380px;"></div>
+            </article>
+        </div>
+    </section>
+    <section class="hidden" id="chat">
+      <div class="row " style="padding-top:40px;">
+          <div class="col-md-12">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                    Chat
+                </div>
+                  <div class="panel-body">
+                      <ul class="media-list">
+                        <li class="media">
+                            <div id="chat-body" class="media-body">
+
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <form id="chat-form">
+                          <div class="input-group">
+                            <input id="send-message" type="text" class="form-control" placeholder="Mensaje a enviar" />
+                            <span class="input-group-btn">
+                                <button id="send-button" class="btn btn-info" type="submit">ENVIA</button>
+                            </span>
+                          </div>
+                        </form>
+                    </div>
+              </div>
+          </div>
+
+      </div>
+    </section>
+    <section class="hidden" id="confirm">
+      <div class="row">
+        <article>
+          <div class="col-sm-6 col-md-12 centered">
+            <header><p><a class="btn btn-primary btn-lg" href="form.html" role="button">Confirmar pedido &raquo;</a></p></header>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+      <hr>
+
+      <footer>
+      </footer>
+    </div> <!-- /container -->
+    </body>
+</html>

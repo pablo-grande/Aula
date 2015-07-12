@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Heladería</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- jQuery library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/helados.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <article>
+                <div class="panel panel-default centered svg">
+                    <header>
+                        <div class="panel-body"><h3>Selecciona un formato para tu helado y los sabores</h3></div>
+                    </header>
+                </div>
+            </article>
+
+            <!-- FORMATO -->
+
+            <article>
+                <div class="col-md-12">
+                    <header><h2>Seleccione un formato</h2></header>
+                </div>
+            </article>
+
+            <section id="formatos">
+                <article>
+                    <div class="col-xs-12 col-md-4">
+                        <header><h3>Cucurucho</h3></header>
+                        <img id="cucurucho" class="selectable" role="button" class="thumbnail" src="img/cucurucho.jpg" alt="cucurucho">
+                    </div>
+                </article>
+                <article>
+                    <div class="col-xs-12 col-md-4">
+                        <header><h3>Tarrina</h3></header>
+                        <img id="tarrina" class="selectable" role="button" class="thumbnail" src="img/tarrina.jpg" alt="tarrina">
+                    </div>
+                </article>
+                <article>
+                    <div class="col-xs-12 col-md-4">
+                        <header><h3>Polo</h3></header>
+                        <img class="selectable" id="polo" role="button" class="thumbnail" src="img/polo.jpg" alt="polo">
+                    </div>
+                </article>
+            </section>
+
+        </div>
+
+        <hr>
+
+        <!-- SABORES -->
+
+        <div class="row">
+
+            <article>
+                <div class="col-md-12">
+                    <header><h2>Sabores</h2></header>
+                </div>
+                <div class="col-md-2">
+                    <p><input id="filter_text" type="text" class="form-control" placeholder="Filtrar por sabor"></p>
+                    <p><a id="filter_confirm" class="btn btn-primary btn-lg" role="button">Filtrar</a></p>
+                    <!-- <p><input type="text" class="form-control" placeholder="Buscar por precio"></p> -->
+                </div>
+            </article>
+            <section id="sabores"></section>
+
+        </div>
+        <section>
+            <div class="row">
+                <article>
+                    <div class="col-sm-6 col-md-12 centered">
+                        <header><p><a id="confirm" class="btn btn-primary btn-lg" href="heladeros.html" role="button">Contacta con el
+                            heladero &raquo;</a></p></header>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer>
+        </footer>
+    </div>
+    <!-- /container -->
+</section>
+</body>
+</html>

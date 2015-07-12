@@ -1,0 +1,14 @@
+
+<!ELEMENT heladero  ( nombre , heladeria , bio , foto )>
+
+<!ELEMENT foto  ( url )>
+
+<!ELEMENT heladeros  ( heladero+ )>
+
+<!ELEMENT bio  ( #PCDATA )>
+
+<!ELEMENT heladeria  ( #PCDATA )>
+
+<!ELEMENT nombre  ( #PCDATA )>
+
+<!ELEMENT url  EMPTY>

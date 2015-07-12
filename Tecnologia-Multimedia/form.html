@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Heladería</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  
+  <body>
+    <!-- Este formulario podría estar oculto y aparecer cuando el heladero y el cliente llegan a un acuerdo -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <section>
+            <div class="panel panel-default centered svg">
+              <header>
+                <h3>
+                  <div class="panel-body">Ponga a continuación sus datos</div>
+                </h3>
+              </header>
+            </div>
+          </section>
+          <section>
+            <article>
+              <div class="col-xs-12 col-md-3">
+                <div class="panel panel-default">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading centered">
+                    <header>Resumen del pedido</header>
+                  </div>
+                  <div class="panel-body">
+                    <p>A continuación le mostramos un resumen de lo que se le entregará</p>
+                  </div>
+                  <!-- List group -->
+                  <ul id="abstract" class="list-group">
+                    <li class="list-group-item">Acordado con heladero</li>
+                  </ul>
+                  <div class="panel-footer">
+                    <p>Total:
+                      <b id="price">Acordado con el heladero</b>
+                      </br>Se lo entrega:
+                      <b id="seller-name"></b>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+          <section>
+            <div class="col-xs-12 col-md-9">
+              <form role="form">
+                <article>
+                  <div class="form-group input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                      <i class="fa fa-user"></i>
+                    </span>
+                    <input type="name" class="form-control" id="name" placeholder="Introduzca su nombre" title="Se necesita un nombre" required>
+                  </div>
+                </article>
+                <article>
+                  <div class="form-group input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                      <i class="fa fa-phone"></i>
+                    </span>
+                    <input type="text" class="form-control" id="phone" placeholder="Introduzca un teléfono de contacto" title="Se necesita un teléfono de contacto"
+                    required>
+                  </div>
+                </article>
+                <article>
+                  <div class="form-group input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                      <i class="fa fa-map-marker"></i>
+                    </span>
+                    <input type="address" class="form-control" id="address" placeholder="Introduzca una dirección de entrega" title="Ponga la dirección de entrega"
+                    required>
+                  </div>
+                </article>
+                <article>
+                  <div class="form-group input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                      <i class="fa fa-credit-card"></i>
+                    </span>
+                    <input id="card" type="text" class="form-control" placeholder="Tarjeta de crédito" aria-describedby="basic-addon1" required>
+                  </div>
+                </article>
+                <article>
+                  <div class="form-group input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                      <i class="fa fa-envelope-o"></i>
+                    </span>
+                    <input type="email" class="form-control" id="email" placeholder="Introduzca un email" required>
+                  </div>
+                </article>
+                <article>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">Deseo recibir noticias y promociones de la Heladería Online.</label>
+                  </div>
+                </article>
+                <p class="centered">
+                  <button type="submit" class="btn btn-default" formaction="gracias.html">Enviar</button>
+                </p>
+                <!--<p class="centered"><a class="btn btn-default" href="gracias.html" role="button">Confirmar pedido</a></p>-->
+              </form>
+            </div>
+          </section>
+          <hr>
+          <footer></footer>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>

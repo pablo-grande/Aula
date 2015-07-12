@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!-- Este documento sirve para hacer una selección de los helados.
+Con este xml podemos enumerar los sabores disponibles y si queremos
+ponerle extras a nuestro helado-->
+
+<formatos>
+	<formato>
+		<nombre>Cucurucho</nombre>
+		<img>img/cucurucho.jpg</img>
+	</formato>
+	<formato>
+		<nombre>Tarrina</nombre>
+		<img>img/tarrina.jpg</img>
+	</formato>
+	<formato>
+		<nombre>Polo</nombre>
+		<img>img/polo.jpg</img>
+	</formato>
+</formatos>
