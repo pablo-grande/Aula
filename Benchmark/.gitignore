@@ -1,0 +1,7 @@
+.idea/
+*.pyc
+*.dat
+*.aux
+*.log
+*.gz
+*.out
