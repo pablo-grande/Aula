@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--Los heladeros irán el la página de heladeros.html
+La principal idea de esta estructura es poner una preview
+del nombre y una foto del heladero y si hacemos click, podemos
+acceder a una página de detalle donde ya veremos la bio-->
+<heladeros>
+	<heladero>
+	  	<nombre>Miquel Noguera</nombre>
+		  <heladeria>Ca'n Joan de s'Aigo</heladeria>
+	 	 <bio>En Miquel Noguera ha estat gelater de tota sa vida</bio>
+		  <img>img/heladeros/miquel.jpg</img>
+	</heladero>
+
+	<heladero>
+		<nombre>John Doe</nombre>
+		<heladeria>Boutique del Gelatto</heladeria>
+		<bio>No sabem gaire cosa d'ell...</bio>
+		<img>img/heladeros/john.jpg</img>
+	<rating>Excelente</rating></heladero>
+
+	<heladero>
+		<nombre>Mary Moe</nombre>
+		<heladeria>Gelats Paco</heladeria>
+		<bio>Na Mary ha vengut de molt enfora per fer gelats.</bio>
+		<img>img/heladeros/mary.jpg</img>
+	</heladero>
+</heladeros>

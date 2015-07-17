@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<!-- Este documento sirve para hacer una selección de los helados.
+Con este xml podemos enumerar los sabores disponibles y si queremos
+ponerle extras a nuestro helado-->
+
+
+
+<sabores>
+	<sabor>
+		<nombre>Chocolate</nombre>
+		<img>img/sabores/chocolate.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Vainilla</nombre>
+		<img>img/sabores/vainilla.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Fresa</nombre>
+		<img>img/sabores/fresa.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Menta</nombre>
+		<img>img/sabores/menta.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Naranja</nombre>
+		<img>img/sabores/naranja.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Pistacho</nombre>
+		<img>img/sabores/vainilla.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Limón</nombre>
+		<img>img/sabores/limon.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Almendra</nombre>
+		<img>img/sabores/almendra.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Cookie</nombre>
+		<img>img/sabores/cookies.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Mango</nombre>
+		<img>img/sabores/mango.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Frambuesa</nombre>
+		<img>img/sabores/frambuesa.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Plátano</nombre>
+		<img>img/sabores/platano.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Nata</nombre>
+		<img>img/sabores/nata.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Coco</nombre>
+		<img>img/sabores/coco.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Stracciatella</nombre>
+		<img>img/sabores/stracciatella.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>After Eight</nombre>
+		<img>img/sabores/after.jpg</img>
+		<precio>1</precio>
+	</sabor>
+	<sabor>
+		<nombre>Sandía</nombre>
+		<img>img/sabores/sandia.jpg</img>
+		<precio>1</precio>
+	</sabor>
+</sabores>

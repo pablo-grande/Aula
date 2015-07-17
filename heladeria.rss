@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0">
+ <channel>
+ <title>Heladeria Online</title>
+ <link>pabloriutort.github.com/Tecnologia-Multimedia</link>
+ <description>En la heladería online un heladero vendrá a traerte lo que necesites</description>
+
+ <item>
+ <title>Nuevos heladeros!</title>
+ <link>pabloriutort.github.com/Tecnologia-Multimedia/heladeros.html</link>
+ <description>Mira qué nuevos heladeros vienen</description>
+ </item>
+ 
+ </channel>
+</rss>
