@@ -1,10 +1,10 @@
 Estructura-de-dades
 ===================
 
-##Práctica##
+## Práctica
 Contiene la práctica de la asignatura, un codificador y decodificador de un árbol utilizando estructuras de datos como árboles, heaps e iteradores.
 
-##Teoria
+## Teoria
 Estructuras de datos vistas en clase (en Ada):
 * Estructuras Lineales: Pilas, Colas y Listas.
 * Árboles.
@@ -12,5 +12,5 @@ Estructuras de datos vistas en clase (en Ada):
 * Conjuntos especiales: Colas de prioridad, Producto cartesiano, Relaciones de equivalencia.
 * Grafos.
 
-##Otros directorios
+## Otros directorios
 Contienen las implementaciones en python (aproximada) de los conjuntos anteriores
