@@ -1,20 +1,20 @@
 Tecnología Multimedia
 =====================
 
-#Práctica
+# Práctica
 Consiste en un ejemplo de web que utiliza tecnología XML, XSLT, HTML y Javascript para simular una página de servicios itinerantes.
 
-#Teoría
+# Teoría
 Teoría de la asignatura
 
-##XML
+## XML
 Tanto XML como HTML tienen sus orígenes en SGML (*Standard Generalized Markup Language*), que es un metalenguaje que nos permite definir la estructura de nuestros documentos. La definición de la estructura de un documento se hace mediante un DTD, definimos los elementos que contiene y cómo tienen que estar organizados para que sea correcto, por ejemplo un DTD podría definir la estructura de un documento HTML, por tanto, HTML es un tipo de documento SGML utilizado en web.
 
 > XML **no es un tipo de documento SGML**, es una versión abreviada de este.
 
 Con XML podemos definir nuestros propios documentos y etiquetas.
 
-###DTD
+### DTD
 En una DTD (Data Type Definition) se define la estructura de un documento XML, es decir, qué elementos conforman este documento y cómo están formados y relacionados.
 
 En función de si un XML tiene asociado un DTD podemos determinar si el documento es:
@@ -33,7 +33,7 @@ Un documento XML es bien formado si cumple las siguientes reglas:
 
 Además, los documentos XML bien formados tienen que cumplir con la corrección de sintaxis y restricciones de buena formación (*case sensitive, atributos entrecomillados, nombres de etiquetas iguales al principio y al final, etc*).
 
-####Elementos
+#### Elementos
 
 * `#PCDATA`: Define un nodo vacío, sin hijos. Texto.
 * Hijos: `<!ELEMENT XXX (AAA,BBB)>` XXX tiene dos hijos: AAA y BBB.
@@ -42,7 +42,7 @@ Además, los documentos XML bien formados tienen que cumplir con la corrección 
 * `?`: El elemento aparece (una, ninguna) vez.
 * `|`: Selecciona uno de entre varios elementos. `<!ELEMENT BBB (CCC|DDD)>` El elemento BBB bien contiene un elemento CCC o un elemento DDD.
 
-####Atributos
+#### Atributos
 Asocia pares de nombre-valor con elementos. Comienza con ATTLIST, seguido del nombre del elemento al que pertenece el atributo.
 ```
 <!ATTLIST XXX
@@ -58,17 +58,17 @@ Asocia pares de nombre-valor con elementos. Comienza con ATTLIST, seguido del no
 * `IDREF` debe corresponder con el valor de algún atributo ID del documento.
 * `IDREFS` puede corresponder a varios IDs.
 
-###XSL
+### XSL
 XML separa semántica y presentación de datos. La presentación de los datos se puede hacer mediante XSL, que controla dos componentes:
 
 * Objetos que permiten aplicar información del formato a los elementos XML.
 * Transformaciones XSL (XSLT), permite controlar el documento de salida y transformar los elementos XML en otras cosas. Por ejemplo, podemos pasar de XML a HTML.
 
-##SVG
+## SVG
 Scalable Vector Graphics. XML Graphics para la Web.
 Es un lenguaje XML que permite expresar gráficos 2D de forma textual. Es un lenguaje vectorial.
 
-###Beneficios
+### Beneficios
 * No pierde calidad si se hace zoom o redimensiona.
 * Ideal para ser impreso.
 * Puede mostrarse de manera progresiva, no tiene que esperar que todo el documento esté cargado.
@@ -76,10 +76,10 @@ Es un lenguaje XML que permite expresar gráficos 2D de forma textual. Es un len
 * Pueden transformarse por hojas de estilo (CSS, XSL)
 * Se puede integrar con varias tecnologías XML y del W3C.
 
-###Sistema de coordenadas
+### Sistema de coordenadas
 El área del dibujo es infinita. Podemos establecer el tamaño del viewport (área en la que estamos interesados) utilizando los atributos height y width de svg y cuyo origen de coordenadas comienza en el punto (0,0) de la pantalla, siendo este la esquina superior izquierda.
 
-###Estilos
+### Estilos
 Se pueden usar reglas de CSS para definir propiedades del objeto. Vienen definidas por el tag "style".
 ```
 style="fill:color"; Define el color de la figura.
@@ -88,14 +88,14 @@ style="stroke-width:número"; Define el ancho del contorno.
 style="stroke:color"; Define el color del contorno.
 ```
 
-###Geometría
+### Geometría
 Existen varias formas predefinidas en svg.
 "x" e "y" desplazamiento del objeto respecto al origen de coordenadas. 
 "width" y "height" ancho y alto del objeto.
 
 
 style="stroke-opacity:número decimal"; Define el valor de la opacidad del contorno.
-####Rectángulo
+#### Rectángulo
 ```
 <svg width="400" height="110">
   <rect width="300" height="100" 
@@ -104,7 +104,7 @@ style="stroke-opacity:número decimal"; Define el valor de la opacidad del conto
 ```
 "rx" y "ry" redondean las esquinas del objeto.
 
-####Círculo
+#### Círculo
 ```
 <svg height="100" width="100">
   <circle cx="50" cy="50" r="40" 
@@ -120,7 +120,7 @@ En este ejemplo los elementos relacionados con el estilo de la figura se ponen d
 </svg>
 ```
 
-####Elipse
+#### Elipse
 ```
 <svg height="140" width="500">
   <ellipse cx="200" cy="80" rx="100" ry="50"
@@ -129,7 +129,7 @@ En este ejemplo los elementos relacionados con el estilo de la figura se ponen d
 ```
 "cx" y "cy" son el centro de la figura, como en el círculo. "rx" y "ry" definen el radio horizontal y el vertical respectivamente.
 
-####Line
+#### Line
 ```
 <svg height="210" width="500">
   <line x1="0" y1="0" x2="200" y2="200" 
@@ -138,7 +138,7 @@ En este ejemplo los elementos relacionados con el estilo de la figura se ponen d
 ```
 "x1" y "x2" representan respectivamente el inicio y el final de la línea en el eje x, "y1" y "y2" representan lo mismo en el eje y.
 
-####Polygon
+#### Polygon
 ```
 <svg height="210" width="500">
   <polygon points="200,10 250,190 160,210" 
@@ -147,7 +147,7 @@ En este ejemplo los elementos relacionados con el estilo de la figura se ponen d
 ```
 El atributo "points" define el "x" e "y" de cada esquina del polígono. Este tiene 3 esquinas, una cuarta componente en el atributo "points" creará un polígono de cuatro esquinas.
 
-####Polyline
+#### Polyline
 Crea cualquier forma que consiste en líneas rectas
 ```
 <svg height="200" width="500">
@@ -157,8 +157,8 @@ Crea cualquier forma que consiste en líneas rectas
 ```
 El atributo "points" define los puntos de la línea.
 
-###Elementos disponibles
-####G
+### Elementos disponibles
+#### G
 El elemento G se utiliza como contenedor para agrupar distintos objetos para después poder realizar sobre ellos acciones de forma global.
 ```
 <svg width="500" height="400">
@@ -173,14 +173,14 @@ El elemento G se utiliza como contenedor para agrupar distintos objetos para des
 </svg>
 ```
 El grupo G define una opacidad de 0.2 sobre los rectángulos que contiene.
-####Referencias
+#### Referencias
 Las referencias dentro de SVG permiten la reutilización de distintas definiciones de objetos en cualquier punto del documento. Así, podemos definir filtros u otras propiedades de ajuste gráfico de forma general dentro del documento y aplicarlas dinámicamente vía scripting. Esto se consigue aplicando un ID sobre el tag y llamándolo en el elemento deseado.
 ```
 <linearGradient id="MyGradient">
 </linearGradient>
 <rect style="fill:url(#MyGradient)"/>
 ```
-####USE
+#### USE
 Cualquier elemento gráfico de tipo SYMBOL, G, USE u otros elementos pueden potencialmente ser considerados como patrones y ser susceptibles de reutilizarse mediante la utilización de USE.
 ```
 <svg width="10cm" height="3cm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -193,7 +193,7 @@ Cualquier elemento gráfico de tipo SYMBOL, G, USE u otros elementos pueden pote
 </svg>
 ```
 
-##XSL-FO
+## XSL-FO
 XSL es un lenguaje para escribir hojas de estilo que consta de dos partes:
 
 * XSLT, que es un lenguaje de transformación, mediante el cual se puede transformar un documento XML en otro XML.
@@ -239,7 +239,7 @@ XSL es un lenguaje para escribir hojas de estilo que consta de dos partes:
     </fo:page-sequence>
 </fo:root>
 ```
-###Formato
+### Formato
 Los FO están divididos formalmente en cuatro tipo de áreas rectangulares:
 
 * Contenedores
@@ -258,32 +258,32 @@ Una **línea** (line area) hace referencia a cada línea de texto dentro de un b
 
 Las **inclusiones** (inline areas) son partes de una línea, como por ejemplo cada carácter, la referencia a una nota al pie o una expresión matemática. Cada inclusión puede contener otras inclusiones o inclusiones de espacio. 
 
-###Propiedades
-####Páginas patrón
+### Propiedades
+#### Páginas patrón
 El elemento raíz de un FO es `fo:root`. Este elemento contiene un `fo:layout-master-set` y cero o más `fo:pagesequence`.
 
 El `fo:layout-master-set` es un contenedor para las diferentes `fo:master-page` que vayan a usarse en el documento. Cada master page permite definir el patrón para una página.
 
-####Simple master pages
+#### Simple master pages
 Se representan con `fo:simple-page-master`, las cuales pueden estar incluidas en un `fo:layout-master-set`. Definen el aspecto de cada página patrón especificando los tamaños de sus regiones.
 
-####Page secuences
+#### Page secuences
 Cada documento generado con FO debe tener una o más `fo:pagesequence`, cada una de las cuales a su vez tiene: 
 * Una `fo:sequencespecification` (indicando el orden en que las páginas patrón son usadas). 
 * Cero o más `fo:static-content` con texto a incluir en todas las páginas.
 * Un `fo:flow` con datos que se incluirán en cada página.
 
-####Flows, contenido dinámico
+#### Flows, contenido dinámico
 El objeto `fo:flow`ubica el contenido de la página, dicho contenido está compuesto por el objecto `fo:block` (u otros elementos).
 
-####Static, contenido estático
+#### Static, contenido estático
 Los `fo:static-content` sirven para especificar contenido que aparecerá en todas las páginas, pudiendo contener internamente los mismos contenidos que un `fo:flow`.
 ```
 <fo:static-content flow-name="region-after">
    <fo:block>(C) GeNeura 2001</fo:block>
 </fo:static-content> 
 ```
-####Numeración
+#### Numeración
 Un `fo:page-sequence` tiene atributos relativos a la numeración pero para poner el número de página como tal hemos de incluir el `fo:page-number` dentro de un `fo:block`, `fo:inline` o algo similar.
 ```
 <fo:page-sequence initial-page-numer="5" format="i">
@@ -295,7 +295,7 @@ Un `fo:page-sequence` tiene atributos relativos a la numeración pero para poner
 </fo:page-sequence> 
 ```
 
-##XQuery
+## XQuery
 ```
 <!--"books.xml"-->
 <?xml version="1.0" encoding="UTF-8"?>
@@ -339,16 +339,16 @@ Un `fo:page-sequence` tiene atributos relativos a la numeración pero para poner
 
 XQuery usa funciones para extraer datos de un documento XML. XQuery utiliza expresiones Path para navegar a través de los elementos del documento.
 
-###Funciones y expresiones Path
+### Funciones y expresiones Path
 `doc('books.xml')` Carga el documento XML. `docs('docs.xml')/bookstore/book/title` selecciona todos los elementos "title" del documento.
 
-###Predicados
+### Predicados
 XQuery utiliza predicados para limitar los datos extraídos de un documento XML. Por ejemplo:
 
 * `doc('books.xml')/bookstore/book[price<30]` -> Libros cuyo precio sea inferior a 30.
 * `doc('books.xml')/bookstore/book[price<30]/title` -> Títulos de libros cuyo precio sea inferior a 30.
 
-###FLWOR
+### FLWOR
 FLWOR es un acrónimo para "For, Let, Where, Order by, Return".
 
 La expresión equivalente a `doc('books.xml')/bookstore/book[price<30]/title` -> Títulos de libros cuyo precio sea inferior a 30 sería
@@ -359,7 +359,7 @@ order by $x/title
 return $x/book/title
 ```
 
-###XQuery + HTML
+### XQuery + HTML
 Presentar los resultado en una lista
 ```
 <ul>
@@ -391,7 +391,7 @@ return <li>{data($x)}</li>
 }
 </ul>
 ```
-###Condicionales
+### Condicionales
 ```
 for $x in doc('books.xml')/bookstore/book
 return if ($x/@category == 'children')
