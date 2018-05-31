@@ -1,0 +1,93 @@
+¿Qué podría anular las ventajas de un sistema de ficheros con journaling?
+• a) Caídas no programadas del sistema F
+• b) Muchos datos de usuarios pendientes de grabar
+• c) Caché interna de discos duros <---
+• d) Sistemas de buffers y cache de disco
+
+8. El tamaño de las tablas de páginas de cada proceso:
+a) Es proporcional al tamaño de página. F
+b) Es inversamente proporcional al tamaño de página. <----
+c) Es proporcional al tamaño del TLB. F
+d) Es proporcional a la cantidad de procesos activoS
+
+Si se elimina el TLB de un procesador:
+a)el tiempo efectivo de acceso a memoria aumentara <--- El doble
+b)el tiempo efectivo de acceso a memoria disminuira
+c)sera imposible implementar sistemas de paginas
+d)sera imposible implementar sistemas de memoria virtual
+
+cuando se ejecuta un fork(), los sistemas implementas copy-on-write¿cual de los siguientes casos es el mas favorecedor?
+a)es indistinto
+b)cuando el hijo ejecuta exec() inmediatamente F
+c)cuando el hijo hace mas modificaciones a los datos en memoria F
+d)cuando la memoria del padre es relativamente pequeña
+
+19. Si en un sistema de ficheros de disco se usan bloques de menor tamaño:
+• a) Disminuye la fragmentación externa.
+• b) Disminuye la fragmentación interna. <---
+• c) Aumenta la fragmentación interna.
+• d) Aumenta la fragmentación externa. ¿?
+
+El algoritmo de reloj (CLOCK) para reemplazo de páginas:
+a)El similar la FIFO de segunda oportunidad. <----
+b)Ordena a las páginas por su frecuencia de uso.
+c)Asigna un periodo de tiempo (predefinido) adicional a la página para ver si es utilizada en ese periodo.
+d)Sufre la "anomalía de Belady.
+
+17. Para el mismo caso anterior, la función mi_read() no es bloqueante, si un programa está
+creando un fichero, otro está a punto de borrar un fichero de otro directorio y hay varios
+lectores
+• a) Todos se bloquearán hasta que terminen los que crean o borran
+ficheros
+• b) Todos se ejecutarán de forma concurrente <----
+• c) Se bloquean los lectores y el que borra se ejecutará concurrentemente
+• d) Se bloqueará el que borra, los lectores continuarán “asincronamente”
+
+1.¿Cuál de los siguientes sistemas de gestión de memoria tiene la menor fragmentación interna media por proceso? 
+a)Particiones fijas. 
+b)Particiones variables. 
+c)Segmentación. <---
+d)Paginación.
+
+18. Si se elimina el TLB de un procesador:
+a) Será imposible implementar sistemas de
+páginas.
+b) Será imposible implementar sistemas de
+memoria virtual.
+c) El tiempo efectivo de acceso será casi el <---
+doble.
+d) El tiempo efectivo de acceso a memoria
+disminuirá.
+
+12) ¿que metodod e lectura usa el SO cuando un fgets con stdin?
+
+a) por bloques canonico(cooked)
+b)por caracteres canonico <----
+c) por caracteres no canonico(raw)
+d) por bloques no canonico
+
+18. ¿Cuál de los siguientes métodos de gestión de
+memoria es más apto para minimizar la fragmentación
+en sistemas con muchos procesos activos?
+a) Particiones fijas.
+b) Particiones variables.
+c) Paginación. <-----
+d) Segmentación.
+
+El algoritmo del reloj (CLOCK) para
+reemplazo de páginas:
+a) Sólo puede usarse para el reemplazo de
+páginas en gestión de memoria virtual.
+b) Podría usarse también para selección de <----
+víctimas en sistemas de buffer-cache .
+c) Ordena la lista de páginas dependiendo
+de la frecuencia de acceso.
+d) Asigna un período de tiempo predefinido
+adicional a la página para ver si es
+utilizada en ese período
+
+Un sistema de gestión de memoria paginada permite que cada proceso seleccione tamaños de páginas más grandes (siempre como potencia de 2 y de tamaños predefinidos).
+a) No es posible.
+b) No tiene sentido, no da ninguna ventaja.
+c) Perjudicaría al rendimiento del TLB.
+d) Mejoraría el rendimiento del TLB. <----
